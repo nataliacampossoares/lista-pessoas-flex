@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0
+        }
+
+        .container {
+            display: flex;
+            background-color: blue;
+            height: 100vh;
+            width: 100vw;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .list {
+            display: flex;
+            background-color: white;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 90vh;
+            width: 50vw;
+            border-radius: 10px;
+        }
+
+        .list-item {
+            display: flex;
+            border-bottom: 2px solid lightgray;
+            flex-grow: 1;
+        }
+
+        img {
+            display: flex;
+            border-radius: 100px;
+            flex-grow: 0;
+            height: 120px;
+            width: 120px; 
+        }
+
+        .nome { 
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .endereco {
+            color: gray;
+            font-size: 15px;
+        }
+
+        .arrumar {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-evenly;
+            flex-grow: 1;
+            width: 500px;
+            margin: 20px
+            
+        }
+
+        .imagem {
+            flex-grow: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="list">
+            <li class="list-item">
+                <div class="imagem">
+                    <img src="https://randomuser.me/api/portraits/women/41.jpg">
+                </div>
+                <div class="arrumar">
+                    <div class="nome">Felicia Diaz</div>
+                    <div class="endereco">3973 Taylor St</div>
+                </div>
+            </li>
+            <li class="list-item">
+                <div class="imagem">
+                    <img src="https://randomuser.me/api/portraits/women/73.jpg">
+                </div>
+                <div class="arrumar">
+                    <div class="nome">Elizabeth Phillips</div>
+                    <div class="endereco">3830 Pockrus Page Rd</div>
+                </div>
+            </li>
+            <li class="list-item">
+                <div class="imagem">
+                    <img src="https://randomuser.me/api/portraits/women/66.jpg">
+                </div>
+                <div class="arrumar">
+                    <div class="nome">Madison Caldwell</div>
+                    <div class="endereco">7979 E Sandy Lake Rd</div>
+                </div>
+            </li>
+            <li class="list-item">
+                <div class="imagem">
+                    <img src="https://randomuser.me/api/portraits/men/40.jpg">
+                </div>
+                <div class="arrumar">
+                    <div class="nome">Jamie Mendoza</div>
+                    <div class="endereco">869 Lovers Ln</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
